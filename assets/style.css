@@ -215,3 +215,9 @@ body{font-size:18px;line-height:1.85}
 @media(max-width:360px){
   .price-card .price-description{padding-left:16px;padding-right:16px;font-size:15px}
 }
+
+/* v2.4: prevent a single character from hanging in the license heading. */
+.license-box .license-heading span{display:inline;white-space:nowrap;font-size:inherit;color:inherit}
+@media(max-width:720px){
+  .license-box .license-heading span{display:block}
+}
