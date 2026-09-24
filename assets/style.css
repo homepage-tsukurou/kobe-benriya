@@ -10,3 +10,7 @@
 .area-map.prefecture-map{border-width:8px}.area-map.prefecture-map img{aspect-ratio:auto;object-fit:contain}
 .area-map.city-map{border-width:8px}.area-map.city-map img{aspect-ratio:auto;object-fit:contain}
 .area .area-list{background:#fff;color:var(--ink);border-color:#fff;box-shadow:0 8px 22px #00527b30}.area .area-list b{color:var(--blue2)}
+/* Keep each phrase of the main heading together at desktop and phone widths. */
+.hero h1{font-size:clamp(27px,3.1vw,56px);line-height:1.4}
+.hero-heading-line{display:block;white-space:nowrap}
+@media(max-width:720px){.hero h1{font-size:clamp(26px,8vw,34px)}}
