@@ -150,3 +150,6 @@ body{font-size:18px;line-height:1.85}
   .fixed-contact{grid-template-columns:repeat(2,minmax(0,1fr))}
   .fixed-contact a{min-width:0;text-align:center}
 }
+/* v1.6: larger illustrations in service cards. */
+.service-grid i{display:block;font-size:68px;line-height:1.25}
+@media(max-width:720px){.service-grid i{font-size:56px}}
