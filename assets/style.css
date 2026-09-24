@@ -204,3 +204,14 @@ body{font-size:18px;line-height:1.85}
   .service-grid .service-mark img,.service-grid .service-more{width:72px;height:72px}
   .service-grid p{font-size:15px}
 }
+
+/* v2.3: compact, intentional line breaks for mobile pricing copy. */
+.price-card .price-description span{display:inline;font-size:inherit;font-weight:400;white-space:normal}
+@media(max-width:720px){
+  .price-card .price-description{padding:24px 22px;line-height:1.75}
+  .price-card .price-description span{display:block;white-space:nowrap}
+  .price-card .price-description .price-description-second{margin-top:14px}
+}
+@media(max-width:360px){
+  .price-card .price-description{padding-left:16px;padding-right:16px;font-size:15px}
+}
