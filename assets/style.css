@@ -581,3 +581,24 @@ body{font-weight:500}
   .work-grid img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:none}
   .work-grid figcaption{padding:26px 30px}
 }
+
+/* v3.8: PCサービスカードは上段にイラストと見出し、下段に説明 */
+@media(min-width:901px){
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .service-grid article{min-width:0;padding:28px 30px}
+  .service-grid .service-mark{
+    display:grid;
+    grid-template-columns:98px minmax(0,1fr);
+    align-items:center;
+    gap:20px;
+  }
+  .service-grid .service-mark img,.service-grid .service-more{width:98px;height:98px}
+  .service-grid .service-mark h3{margin:0;font-size:27px;line-height:1.35;overflow-wrap:normal}
+  .service-grid p{margin:18px 0 0;font-size:22px;line-height:1.7}
+}
+@media(min-width:721px) and (max-width:900px){
+  .service-grid{grid-template-columns:1fr}
+  .service-grid .service-mark{display:flex;align-items:center;gap:20px}
+  .service-grid .service-mark h3{margin:0}
+  .service-grid p{margin-top:16px}
+}
