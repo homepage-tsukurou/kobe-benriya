@@ -420,3 +420,34 @@ body{font-size:22px;line-height:1.85}
   .reason-list img{width:100%;height:auto}
   .hero-image.profile-image{height:auto;aspect-ratio:1454 / 1082}
 }
+
+/* v3.2: 説明文と補足の読みやすさを上げる */
+:root{--muted:#4b5962}
+body{font-weight:500}
+.section-lead,.area p,.contact>.wrap>p:not(.section-label),
+.trouble-grid p,.service-grid p,.reason-list p,.price-card p,
+.work-grid span,.flow li p,.faq details p,.license-box span,
+.map span,footer p,.transport-copy p,.transport-note,.company dd{
+  font-weight:600;
+}
+.service-grid p,.reason-list p,.price-card p,.work-grid span,
+.flow li p,.faq details p,.license-box span,.transport-copy p{
+  font-size:22px;
+  line-height:1.7;
+}
+.quick-points span,.contact-grid small,.contact-grid em,
+.contact-bar>a small,.contact-bar>a em,.transport-number span{
+  font-size:20px;
+  font-weight:700;
+}
+@media(max-width:720px){
+  .service-grid p,.reason-list p,.price-card p,.work-grid span,
+  .flow li p,.faq details p,.license-box span,.transport-copy p{
+    font-size:21px;
+    line-height:1.7;
+  }
+  .quick-points span,.contact-grid small,.contact-grid em,
+  .contact-bar>a small,.contact-bar>a em,.transport-number span{
+    font-size:18px;
+  }
+}
