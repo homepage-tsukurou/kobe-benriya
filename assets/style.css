@@ -239,3 +239,65 @@ body{font-size:18px;line-height:1.85}
   .price-card .price-description span{display:inline-block;white-space:nowrap}
   .price-card .price-description .price-description-second{display:block;margin-top:12px}
 }
+
+/* v2.8: larger, more legible type and tap targets for older visitors. */
+body{font-size:20px;line-height:1.85}
+.header{min-height:92px;height:auto}
+.logo small{font-size:13px}.logo strong{font-size:25px}
+.header nav{font-size:17px}.header-contact small{font-size:14px}.header-contact strong{font-size:22px}
+.menu-label{font-size:14px}
+.local-label,.section-label{font-size:17px}
+.section-lead,.area p,.contact>.wrap>p:not(.section-label){font-size:21px}
+.hero-text{font-size:clamp(20px,1.8vw,24px)}
+.hero-price>span,.hero-price em{font-size:18px}.button{font-size:22px;min-height:58px}
+.quick-points span{font-size:16px}.quick-points strong{font-size:22px}
+.trouble-grid p,.reason-list p,.price-card p{font-size:19px}
+.trouble-grid b{font-size:21px}
+.service-grid h3{font-size:23px}
+.service-grid p,.work-grid span,.flow li p,.faq details p,.license-box span,.map span,footer p{font-size:18px;line-height:1.8}
+.service-grid article{padding:28px 22px}
+.contact-bar p,.price-notes li{font-size:18px}
+.contact-bar>a small,.contact-bar>a em{font-size:16px}
+.reason-list h3{font-size:29px}
+.price-card span{font-size:21px}.price-card strong{font-size:52px}
+.work-grid b{font-size:25px}.flow li h3{font-size:24px}
+.faq summary{font-size:22px}.license-box strong{font-size:27px}
+.contact-grid small,.contact-grid em{font-size:18px}
+.contact-grid strong{font-size:29px}.company dt,.company dd{font-size:19px}
+.fixed-contact a{min-height:64px;font-size:20px}
+@media(max-width:1050px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){
+  body{font-size:19px;line-height:1.8}
+  .header{min-height:74px}.logo small{font-size:11px}.logo strong{font-size:clamp(18px,5vw,22px)}
+  .menu-label{font-size:13px}
+  .local-label,.section-label{font-size:16px}
+  .section-lead,.area p,.contact>.wrap>p:not(.section-label){font-size:19px}
+  .hero h1{font-size:clamp(29px,8vw,37px)}.hero-text{font-size:19px}
+  .hero-price>span,.hero-price em{font-size:17px}.button{font-size:19px;min-height:58px}
+  .quick-points span{font-size:16px}.quick-points strong{font-size:20px}
+  .wrap>h2,.services h2,.faq h2,.contact h2{font-size:clamp(30px,8vw,39px)}
+  .trouble-grid p{font-size:18px}.trouble-grid b{font-size:21px}
+  .service-grid p,.reason-list p,.price-card p,.work-grid span,.flow li p,.faq details p,.license-box span{font-size:19px;line-height:1.75}
+  .reason-list h3{font-size:26px}.flow li h3{font-size:23px}
+  .faq summary{font-size:21px}.company dt,.company dd{font-size:18px}
+  .contact-grid small,.contact-grid em{font-size:17px}
+  .price-card .price-description{line-height:1.7}
+  .price-notes li{font-size:19px;min-height:64px}
+  .fixed-contact a{font-size:20px;min-height:68px}
+}
+@media(max-width:650px){
+  .service-grid{grid-template-columns:1fr}
+  .service-grid article{grid-template-columns:94px minmax(0,1fr);column-gap:18px;padding:23px 20px}
+  .service-grid .service-mark h3{font-size:25px}
+  .service-grid .service-mark img,.service-grid .service-more{width:86px;height:86px}
+  .service-grid p{font-size:19px}
+}
+@media(max-width:380px){
+  .service-grid article{grid-template-columns:70px minmax(0,1fr);column-gap:12px;padding:19px 15px}
+  .service-grid .service-mark h3{font-size:23px}
+  .service-grid .service-mark img,.service-grid .service-more{width:68px;height:68px}
+  .service-grid p{font-size:18px}
+  .price-card .price-description{font-size:18px;padding-left:18px;padding-right:18px}
+  .price-card .price-description span{white-space:normal}
+  .contact-phone strong{font-size:clamp(21px,6.4vw,28px)}
+}
