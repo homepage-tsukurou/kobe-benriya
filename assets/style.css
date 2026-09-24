@@ -190,3 +190,17 @@ body{font-size:18px;line-height:1.85}
   .service-mark h3{font-size:14px}
   .service-grid p{font-size:15px}
 }
+/* v2.1: full-width heading above illustration and details on phones. */
+@media(max-width:650px){
+  .service-grid article{grid-template-columns:96px minmax(0,1fr);column-gap:18px;row-gap:14px;min-height:0;padding:22px 20px;align-items:center}
+  .service-grid .service-mark{display:contents}
+  .service-grid .service-mark h3{grid-column:1/-1;grid-row:1;font-size:23px;line-height:1.4;margin:0;overflow-wrap:normal}
+  .service-grid .service-mark img,.service-grid .service-more{grid-column:1;grid-row:2;width:86px;height:86px}
+  .service-grid p{grid-column:2;grid-row:2;align-self:center;font-size:16px;line-height:1.7}
+}
+@media(max-width:380px){
+  .service-grid article{grid-template-columns:78px minmax(0,1fr);column-gap:12px;padding:18px 15px}
+  .service-grid .service-mark h3{font-size:21px}
+  .service-grid .service-mark img,.service-grid .service-more{width:72px;height:72px}
+  .service-grid p{font-size:15px}
+}
