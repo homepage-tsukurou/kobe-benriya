@@ -549,3 +549,35 @@ body{font-weight:500}
 @media(max-width:720px){
   .work-grid img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
 }
+
+/* v3.7: 横長1枚＋縦長3枚の比率に合わせた作業事例 */
+@media(min-width:1000px){
+  .work-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:22px}
+  .work-grid figure{display:flex;flex-direction:column;min-width:0}
+  .work-grid figure:first-child{
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:minmax(0,1.3fr) minmax(250px,.7fr);
+    align-items:stretch;
+  }
+  .work-grid figure:first-child img{
+    width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:none;
+  }
+  .work-grid figure:first-child figcaption{
+    display:flex;flex-direction:column;justify-content:center;
+    padding:30px 36px;
+  }
+  .work-grid figure:not(:first-child) img{
+    width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:none;
+  }
+  .work-grid figure:not(:first-child) figcaption{flex:1}
+}
+@media(min-width:721px) and (max-width:999px){
+  .work-grid{grid-template-columns:1fr;gap:22px}
+  .work-grid figure{
+    display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);
+    align-items:center;
+  }
+  .work-grid img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:none}
+  .work-grid figcaption{padding:26px 30px}
+}
