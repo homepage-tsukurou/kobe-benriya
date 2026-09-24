@@ -22,3 +22,131 @@
   .hero-visual .round-badge span{font-size:12px}
   .hero-visual .round-badge strong{font-size:20px}
 }
+/* v1.3: readable type and phrase-aware wrapping. */
+body{font-size:18px;line-height:1.85}
+.mobile-break{display:none}
+.phrase{display:inline-block;white-space:nowrap}
+.text-line{display:block}
+.header nav{font-size:15px;gap:18px}
+.logo small{font-size:12px}
+.header-contact small{font-size:13px}
+.local-label,.section-label{font-size:16px}
+.hero-text{font-size:clamp(18px,1.7vw,23px);line-height:1.7}
+.hero-price>span,.hero-price em{font-size:16px}
+.hero-price strong small,.price-card strong small{font-size:20px}
+.button{font-size:20px}
+.quick-points span{font-size:14px}
+.trouble-grid p,.reason-list p,.price-card p{font-size:17px}
+.trouble-grid b{font-size:19px}
+.service-grid h3{font-size:20px}
+.service-grid p,.work-grid span,.flow li p,.faq details p,.license-box span,.map span,footer p{font-size:16px}
+.service-grid article{padding:27px 18px}
+.contact-bar p,.price-notes li{font-size:16px}
+.contact-bar>a small,.contact-bar>a em{font-size:14px}
+.reason-list h3{font-size:27px}
+.price-card span{font-size:19px}
+.work-grid b{font-size:23px}
+.flow li h3{font-size:21px}
+.faq summary{font-size:19px}
+.license-box strong{font-size:24px}
+.contact-grid small,.contact-grid em{font-size:15px}
+.contact-grid strong{font-size:27px}
+.contact-phone strong{font-size:29px;white-space:nowrap}
+.company dt,.company dd{font-size:17px}
+.area-regions>span{display:inline-block;white-space:nowrap}
+.area .area-list{line-height:2}
+@media(max-width:1250px){
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:1050px){
+  .reason-list article{grid-template-columns:90px minmax(0,1fr) 230px}
+}
+@media(max-width:720px){
+  body{font-size:17px;line-height:1.8}
+  .mobile-break{display:block}
+  .logo small{font-size:10px}
+  .logo strong{font-size:clamp(17px,5vw,21px)}
+  .local-label,.section-label{font-size:14px}
+  .hero-copy{padding:32px 20px 45px}
+  .hero-text{font-size:17px}
+  .hero-price>span,.hero-price em{font-size:15px}
+  .hero-price strong small{font-size:18px}
+  .button{font-size:17px}
+  .quick-points span{font-size:14px}
+  .quick-points strong{font-size:18px}
+  .wrap>h2,.services h2,.faq h2,.contact h2{font-size:clamp(28px,8vw,36px);line-height:1.4}
+  .trouble-grid{grid-template-columns:1fr 1fr}
+  .trouble-grid p{font-size:16px;padding:20px 12px}
+  .trouble-grid b{font-size:18px}
+  .answer strong{font-size:clamp(21px,6vw,28px);line-height:1.55}
+  .service-grid h3{font-size:20px}
+  .service-grid p,.reason-list p,.price-card p,.work-grid span,.flow li p,.faq details p,.license-box span{font-size:16px}
+  .contact-bar{flex-direction:column;gap:12px;text-align:center}
+  .contact-bar>a b{font-size:22px;white-space:nowrap}
+  .contact-bar .line-mini{width:min(100%,280px)}
+  .reason-list article{grid-template-columns:1fr}
+  .reason-list article>b{grid-row:auto;min-height:55px;flex-direction:row;gap:8px}
+  .reason-list article>b em{font-size:28px}
+  .reason-list article>div{padding:23px 20px}
+  .reason-list h3{font-size:23px}
+  .reason-list img{grid-column:1;height:210px;width:100%}
+  .flow li h3{font-size:19px}
+  .contact-grid strong{font-size:25px}
+  .contact-phone strong{font-size:clamp(22px,7vw,30px)}
+  .contact-grid small,.contact-grid em{font-size:15px}
+  .company dl>div{grid-template-columns:95px minmax(0,1fr)}
+  .company dt,.company dd{font-size:16px}
+  .fixed-contact a{font-size:17px}
+}
+@media(max-width:650px){
+  .service-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .trouble-grid,.flow ol{grid-template-columns:1fr}
+  .trouble-grid p{padding:20px}
+  .service-grid article{padding:23px 20px}
+  .flow li{padding:24px 20px}
+  .area-inner{gap:25px}
+  .area-list{font-size:16px}
+}
+@media(max-width:360px){
+  .quick-points{grid-template-columns:1fr}
+  .hero-copy{padding-left:16px;padding-right:16px}
+  .hero h1{font-size:26px}
+  .hero-buttons{grid-template-columns:1fr}
+  .company dl>div{display:block}
+  .company dd{margin-top:3px}
+}
+/* v1.4: compact navigation for phones and narrower desktop windows. */
+.header{position:sticky}
+.header nav{white-space:nowrap}
+.menu-toggle{display:none;border:0;background:transparent;color:var(--ink);cursor:pointer}
+@media(max-width:1350px){
+  .header nav{display:none;position:absolute;left:0;right:0;top:100%;margin:0;padding:14px max(4vw,18px) 22px;background:#fff;border-bottom:2px solid var(--line);box-shadow:0 16px 24px #145b7a25;flex-direction:column;align-items:stretch;gap:0;max-height:calc(100vh - 86px);overflow-y:auto;white-space:normal}
+  .header nav.is-open{display:flex}
+  .header nav a{display:block;padding:12px 10px;border-bottom:1px solid var(--line);font-size:18px}
+  .header nav a:last-child{border-bottom:0}
+  .menu-toggle{margin-left:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:60px;min-height:54px;padding:5px 8px;border-radius:8px}
+  .menu-toggle:hover,.menu-toggle:focus-visible{background:var(--pale)}
+  .menu-toggle:focus-visible,.header nav a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .menu-icon{display:flex;flex-direction:column;justify-content:space-between;width:26px;height:20px}
+  .menu-icon span{height:3px;width:100%;border-radius:3px;background:var(--ink);transition:transform .2s,opacity .2s}
+  .menu-toggle[aria-expanded="true"] .menu-icon span:first-child{transform:translateY(8.5px) rotate(45deg)}
+  .menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(2){opacity:0}
+  .menu-toggle[aria-expanded="true"] .menu-icon span:last-child{transform:translateY(-8.5px) rotate(-45deg)}
+  .menu-label{font-size:11px;font-weight:800;line-height:1}
+  .header-contact{margin-left:0}
+}
+@media(max-width:720px){
+  html{scroll-padding-top:69px}
+  .header{gap:8px}
+  .header nav{max-height:calc(100vh - 69px)}
+  .menu-toggle{min-width:54px;min-height:52px;margin-right:0}
+}
+@media(min-width:721px) and (max-width:900px){.header-contact{display:none}}
+@media(prefers-reduced-motion:reduce){.menu-icon span{transition:none}}
+/* v1.5: equal width contact actions on mobile. */
+@media(max-width:720px){
+  .fixed-contact{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fixed-contact a{min-width:0;text-align:center}
+}
