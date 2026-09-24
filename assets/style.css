@@ -301,3 +301,93 @@ body{font-size:20px;line-height:1.85}
   .price-card .price-description span{white-space:normal}
   .contact-phone strong{font-size:clamp(21px,6.4vw,28px)}
 }
+
+/* v2.9: show the registered light cargo vehicle without calling its plate a permit number. */
+.transport-card{max-width:800px;margin:32px auto 0;padding:28px 32px;display:flex;align-items:center;gap:24px;background:var(--pale);border:2px solid #b9dce9;border-radius:18px}
+.transport-icon{width:92px;height:92px;flex:none;display:grid;place-items:center;background:#fff;border-radius:18px;font-size:45px}
+.transport-copy h3{font-size:27px;margin:0 0 8px}
+.transport-copy p{font-size:19px;margin:0 0 12px;line-height:1.7}
+.transport-number{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:0!important}
+.transport-number span{font-size:17px;font-weight:800;color:var(--blue2)}
+.transport-number strong{font-size:25px;letter-spacing:.04em}
+.transport-note{text-align:center;font-size:17px;margin:18px 0 0}
+@media(max-width:650px){
+  .transport-card{padding:24px 20px;gap:16px;align-items:flex-start}
+  .transport-icon{width:64px;height:64px;font-size:34px}
+  .transport-copy{min-width:0}
+  .transport-copy h3{font-size:23px;line-height:1.4}
+  .transport-copy p{font-size:18px}
+  .transport-number{gap:4px 12px}
+  .transport-number strong{font-size:22px}
+  .transport-note{font-size:17px;line-height:1.6}
+}
+@media(max-width:380px){.transport-card{display:block}.transport-icon{margin-bottom:12px}}
+
+/* v3.0: high-legibility typography throughout the page. */
+body{font-size:22px;line-height:1.85}
+.logo small{font-size:15px}.logo strong{font-size:27px}
+.header nav{font-size:19px}.header-contact small{font-size:16px}.header-contact strong{font-size:24px}
+.header nav a{min-height:52px}
+.local-label,.section-label{font-size:19px}
+.section-lead,.area p,.contact>.wrap>p:not(.section-label){font-size:23px}
+.hero-text{font-size:clamp(22px,2vw,26px)}.hero-price>span,.hero-price em{font-size:20px}
+.hero-price strong{font-size:43px}.hero-price strong small{font-size:22px}
+.button{font-size:24px;min-height:64px}
+.quick-points span{font-size:18px}.quick-points strong{font-size:24px}
+.trouble-grid p,.reason-list p,.price-card p{font-size:21px}
+.trouble-grid b{font-size:23px}.answer span{font-size:22px}
+.service-grid h3{font-size:26px}
+.service-grid p,.work-grid span,.flow li p,.faq details p,.license-box span,.map span,footer p{font-size:21px}
+.contact-bar p,.price-notes li{font-size:21px}.contact-bar>div strong{font-size:25px}
+.contact-bar>a small,.contact-bar>a em{font-size:18px}.contact-bar>a b{font-size:28px}
+.reason-list h3{font-size:31px}.reason-list article>div{padding:32px 30px}
+.price-card span{font-size:23px}.price-card strong{font-size:54px}
+.work-grid b{font-size:27px}.flow li h3{font-size:26px}
+.faq summary{font-size:24px}.license-box strong{font-size:29px}
+.contact-grid small,.contact-grid em{font-size:20px}.contact-grid strong{font-size:32px}
+.company dt,.company dd{font-size:21px}.company dl>div{grid-template-columns:130px minmax(0,1fr)}
+.transport-copy h3{font-size:30px}.transport-copy p{font-size:21px}
+.transport-number span,.transport-note{font-size:19px}.transport-number strong{font-size:28px}
+.fixed-contact a{font-size:22px}
+@media(max-width:1350px){.header nav a{font-size:22px;padding:15px 12px}.menu-label{font-size:15px}}
+@media(max-width:720px){
+  body{font-size:21px;line-height:1.8}
+  .logo small{font-size:12px}.logo strong{font-size:clamp(18px,5vw,22px)}
+  .local-label,.section-label{font-size:17px}
+  .section-lead,.area p,.contact>.wrap>p:not(.section-label){font-size:21px}
+  .hero h1{font-size:clamp(30px,8.4vw,39px)}.hero-text{font-size:21px}
+  .hero-price>span,.hero-price em{font-size:18px}
+  .hero-price strong{font-size:clamp(30px,8vw,39px)}.hero-price strong small{font-size:19px}
+  .button{font-size:21px;min-height:64px}
+  .quick-points span{font-size:17px}.quick-points strong{font-size:22px}
+  .wrap>h2,.services h2,.faq h2,.contact h2{font-size:clamp(32px,8.5vw,41px)}
+  .trouble-grid p{font-size:19px}.trouble-grid b{font-size:22px}
+  .answer span{font-size:20px}.answer strong{font-size:clamp(24px,6vw,31px)}
+  .service-grid p,.reason-list p,.price-card p,.work-grid span,.flow li p,.faq details p,.license-box span{font-size:20px;line-height:1.75}
+  .reason-list h3{font-size:28px}.reason-list article>div{padding:26px 20px}
+  .flow li h3{font-size:25px}.faq summary{font-size:22px}
+  .contact-bar p{font-size:20px}.contact-bar>div strong{font-size:23px}
+  .contact-bar>a small,.contact-bar>a em{font-size:18px}
+  .contact-grid small,.contact-grid em{font-size:19px}.contact-grid strong{font-size:29px}
+  .company dt,.company dd{font-size:20px}
+  .price-notes li{font-size:21px;min-height:68px}
+  .fixed-contact{height:74px}.fixed-contact a,.fixed-contact a:first-child{font-size:21px}
+  .back-top{bottom:90px}
+  .transport-copy h3{font-size:25px}.transport-copy p{font-size:20px}
+  .transport-number span,.transport-note{font-size:18px}.transport-number strong{font-size:24px}
+}
+@media(max-width:650px){
+  .service-grid .service-mark h3{font-size:27px}
+  .service-grid p{font-size:20px}
+  .service-grid p .phrase{max-width:100%;white-space:normal}
+}
+@media(max-width:380px){
+  .service-grid article{display:block}
+  .service-grid .service-mark{display:block}
+  .service-grid .service-mark h3{font-size:25px;margin:0 0 14px}
+  .service-grid .service-mark img,.service-grid .service-more{width:78px;height:78px;margin-bottom:12px}
+  .service-grid p{font-size:20px}
+  .price-card .price-description{font-size:20px}
+  .contact-phone strong{font-size:clamp(21px,6.4vw,28px)}
+  .transport-card{display:block}
+}
