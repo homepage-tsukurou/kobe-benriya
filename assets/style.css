@@ -172,3 +172,21 @@ body{font-size:18px;line-height:1.85}
   .service-grid article{grid-template-columns:1fr;row-gap:8px}
   .service-grid i,.service-grid h3,.service-grid p{grid-column:1;grid-row:auto}
 }
+/* v2.0: cohesive illustrations and left-label/right-detail cards on phones. */
+.service-mark img{display:block;width:82px;height:82px;object-fit:contain}
+.service-mark h3{margin:11px 0 8px}
+.service-more{display:grid;place-items:center;width:82px;height:82px;border-radius:18px;background:#ffffff25;color:#fff;font-size:64px;line-height:1}
+@media(max-width:650px){
+  .service-grid article{display:grid;grid-template-columns:118px minmax(0,1fr);column-gap:16px;row-gap:0;align-items:center;padding:20px 18px;min-height:180px}
+  .service-grid .service-mark{grid-column:1;grid-row:1;min-width:0}
+  .service-mark img,.service-more{width:88px;height:88px}
+  .service-mark h3{font-size:17px;line-height:1.45;margin:10px 0 0;overflow-wrap:anywhere}
+  .service-grid p{grid-column:2;grid-row:1;align-self:center;font-size:16px;line-height:1.75}
+  .service-grid .other p{color:#fff}
+}
+@media(max-width:380px){
+  .service-grid article{grid-template-columns:98px minmax(0,1fr);column-gap:10px;padding:18px 14px}
+  .service-mark img,.service-more{width:78px;height:78px}
+  .service-mark h3{font-size:14px}
+  .service-grid p{font-size:15px}
+}
