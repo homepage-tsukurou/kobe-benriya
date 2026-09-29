@@ -677,3 +677,18 @@ body{font-weight:500}
   .service-grid .service-mark{grid-template-columns:78px minmax(0,1fr);column-gap:14px}
   .service-grid .service-mark img,.service-grid .service-more{width:78px;height:78px}
 }
+
+/* v4.4: 地図を外した事業者情報を読みやすい一列にする */
+.company{display:block;max-width:900px;margin:0 auto}
+.company dl{width:100%}
+
+/* v4.5: トップの案内バッジを自然に並べる */
+.hero-labels{display:flex;align-items:center;flex-wrap:wrap;gap:10px 12px;margin-bottom:15px}
+.hero-labels .local-label{margin:0}
+.staff-label{margin:0;padding:5px 16px;border-radius:30px;background:var(--yellow);color:var(--ink);font-size:19px;font-weight:900;line-height:1.8}
+@media(max-width:720px){.staff-label{font-size:17px;padding:5px 13px}}
+@media(max-width:390px){.hero-labels{gap:8px}.staff-label{font-size:15px;padding:5px 11px}}
+
+/* v4.9: 地図の見出しと説明を画像内に一本化 */
+.area-inner{display:block}
+.area-map.city-map{width:min(100%,650px);margin:0 auto}
