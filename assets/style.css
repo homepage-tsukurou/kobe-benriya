@@ -692,3 +692,41 @@ body{font-weight:500}
 /* v4.9: 地図の見出しと説明を画像内に一本化 */
 .area-inner{display:block}
 .area-map.city-map{width:min(100%,650px);margin:0 auto}
+
+/* v5.0: 個人情報の取り扱いページ */
+.footer-policy{display:block;width:max-content;max-width:90%;margin:16px auto;color:#fff;text-decoration:underline;text-underline-offset:4px;font-size:17px;font-weight:800}
+.policy-header{justify-content:space-between}
+.policy-home{margin-left:auto;color:var(--blue2);font-size:17px;font-weight:900;text-decoration:underline;text-underline-offset:4px}
+.policy-main{max-width:900px;padding:76px 0 100px}
+.policy-main h1{text-align:center;font-size:clamp(32px,5vw,48px);margin:0 0 26px}
+.policy-mobile-break{display:none}
+.policy-intro{font-size:20px;font-weight:700;margin:0 0 48px}
+.policy-main section{padding:27px 0;border-top:1px solid var(--line)}
+.policy-main section h2{font-size:26px;text-align:left;margin:0 0 12px}
+.policy-main section p,.policy-main li{font-size:18px;line-height:1.85}
+.policy-main section p{margin:0}
+.policy-main section p+p{margin-top:12px}
+.policy-main ul{margin:0 0 12px;padding-left:1.5em}
+.policy-main a:not(.policy-return){color:var(--blue2);text-decoration:underline;overflow-wrap:anywhere}
+.policy-date{text-align:right;margin:20px 0 32px}
+.policy-return{display:block;width:max-content;max-width:100%;margin:0 auto;padding:13px 24px;border-radius:8px;background:var(--blue);color:#fff;font-weight:900;text-align:center}
+@media(max-width:720px){
+  .policy-header .logo strong{font-size:18px}
+  .policy-header .logo small{font-size:9px}
+  .policy-home{font-size:13px;text-align:right;line-height:1.4}
+  .policy-main{padding:55px 0 80px}
+  .policy-mobile-break{display:block}
+  .policy-intro{font-size:18px}
+  .policy-main section h2{font-size:23px}
+  .policy-main section p,.policy-main li{font-size:17px}
+}
+
+@media(max-width:720px){.policy-page{padding-bottom:0}}
+
+/* v5.1: フッターはプライバシーポリシーを主役に */
+footer{padding:46px 20px 85px}
+footer .footer-policy{display:block;width:max-content;max-width:100%;margin:0 auto 22px;color:var(--yellow);font-size:clamp(25px,3vw,34px);font-weight:900;line-height:1.4;text-decoration:underline;text-underline-offset:6px}
+footer .footer-brand{display:block;color:#fff;font-size:18px;font-weight:800;line-height:1.5}
+footer .footer-description{font-size:15px;line-height:1.7;margin:7px 0 18px;font-weight:600}
+footer small{font-size:13px;color:#d8e1e5}
+@media(max-width:720px){footer{padding:42px 16px 95px}footer .footer-brand{font-size:16px}footer .footer-description{font-size:13px}}
