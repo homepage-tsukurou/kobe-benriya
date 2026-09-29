@@ -649,3 +649,31 @@ body{font-weight:500}
   .contact-grid a{min-height:190px;padding:20px 12px}
 }
 
+/* v4.1: スマホのサービスカードはイラストの右に見出しを配置 */
+@media(max-width:720px){
+  .service-grid article{display:block;min-height:0;padding:22px 20px}
+  .service-grid .service-mark{
+    display:grid;
+    grid-template-columns:86px minmax(0,1fr);
+    align-items:center;
+    column-gap:18px;
+  }
+  .service-grid .service-mark img,
+  .service-grid .service-more{
+    grid-column:1;grid-row:1;
+    width:86px;height:86px;
+    margin:0;
+  }
+  .service-grid .service-mark h3{
+    grid-column:2;grid-row:1;
+    min-width:0;margin:0;
+    font-size:clamp(21px,5.8vw,27px);
+    line-height:1.4;
+    overflow-wrap:normal;
+  }
+  .service-grid p{margin:18px 0 0;font-size:20px;line-height:1.7}
+}
+@media(max-width:380px){
+  .service-grid .service-mark{grid-template-columns:78px minmax(0,1fr);column-gap:14px}
+  .service-grid .service-mark img,.service-grid .service-more{width:78px;height:78px}
+}
