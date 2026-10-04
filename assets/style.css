@@ -730,3 +730,11 @@ footer .footer-brand{display:block;color:#fff;font-size:18px;font-weight:800;lin
 footer .footer-description{font-size:15px;line-height:1.7;margin:7px 0 18px;font-weight:600}
 footer small{font-size:13px;color:#d8e1e5}
 @media(max-width:720px){footer{padding:42px 16px 95px}footer .footer-brand{font-size:16px}footer .footer-description{font-size:13px}}
+
+
+/* v5.2: 地図の下に対応市町を一覧表示 */
+.area-municipalities{max-width:1050px;margin:36px auto 0;padding:28px 34px 34px;background:#fff;border-radius:20px;box-shadow:0 10px 30px #00527b30}
+.area-municipalities h2{margin:0 0 18px;color:var(--blue2);font-size:clamp(28px,3vw,36px);line-height:1.4;text-align:center}
+.area-municipalities ul{display:flex;flex-wrap:wrap;justify-content:center;gap:11px 13px;margin:0;padding:0;list-style:none}
+.area-municipalities li{padding:5px 15px;border:2px solid #c8e9f8;border-radius:999px;color:var(--ink);font-size:20px;font-weight:800;line-height:1.6;white-space:nowrap}
+@media(max-width:720px){.area-municipalities{margin-top:24px;padding:22px 14px 26px}.area-municipalities h2{margin-bottom:15px}.area-municipalities ul{gap:9px 7px}.area-municipalities li{padding:4px 11px;font-size:17px}}
