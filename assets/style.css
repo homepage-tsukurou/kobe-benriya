@@ -738,3 +738,8 @@ footer small{font-size:13px;color:#d8e1e5}
 .area-municipalities ul{display:flex;flex-wrap:wrap;justify-content:center;gap:11px 13px;margin:0;padding:0;list-style:none}
 .area-municipalities li{padding:5px 15px;border:2px solid #c8e9f8;border-radius:999px;color:var(--ink);font-size:20px;font-weight:800;line-height:1.6;white-space:nowrap}
 @media(max-width:720px){.area-municipalities{margin-top:24px;padding:22px 14px 26px}.area-municipalities h2{margin-bottom:15px}.area-municipalities ul{gap:9px 7px}.area-municipalities li{padding:4px 11px;font-size:17px}}
+
+/* v5.3: visible local context without changing the main catchphrase. */
+.hero h1 .hero-heading-context{display:block;font-size:clamp(19px,2vw,24px);line-height:1.5;margin-bottom:12px;white-space:normal;color:var(--blue2);font-weight:900}
+.area-seo-lead{max-width:720px;margin:0 auto 20px;font-weight:700;font-size:20px;line-height:1.8;overflow-wrap:anywhere}
+@media(max-width:720px){.area-seo-lead{font-size:18px}}
